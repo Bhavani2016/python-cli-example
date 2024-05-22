@@ -9,7 +9,7 @@ def run_command(command):
     cmd = shlex.split(command)
     output = subprocess.check_output(cmd)
     return output
-
+# function produce json format
 def run_lsblk(device):
     """
     Runs lsblk command and produces JSON output:
